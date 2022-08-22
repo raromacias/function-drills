@@ -321,7 +321,7 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 function emailCheck(email){
-  String(email)
+  String(email).trim()
   if(email.includes("@")){
     return "email verified"
   }else{
